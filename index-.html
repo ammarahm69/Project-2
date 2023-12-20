@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+        *{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+    }
+
+
+    .navbar{
+        height: 60px;
+        background-color: #0f1111;
+        color: white;
+        display: flex;
+        /* justify-content: space-evenly; */
+        
+    }
+
+    .navlogo{
+        height: 50px;
+        width: 100px;
+        
+    }
+
+    .logo{
+        background-image: url(amazon_logo.png);
+        background-size: cover;
+        height: 50px;
+        width: 100%;
+    }
+    .border{
+        border: 1.5px solid transparent;
+    }
+    .border:hover{
+        border: 1.5px solid white;
+    }
+    /* box-2 */
+    .add-frist{
+        color: #CCCCCC;
+        font-size: 0.85rem;
+        margin-left: 12px;
+        margin-top: 6px;
+    }
+
+    
+    .add-sec{
+        font-size: 1rem;
+        margin-left: 4px;
+        margin-top: 30px;
+    }
+
+    
+    .add-icon{
+        display: flex;
+        align-items: center;
+    }
+    .fa{
+        margin-left: -25px;
+    }
+     /* box-3 */
+     #iconha{
+    margin-left: -33px;
+    margin-top: 6px;
+    color: black;
+    background-color: #ffa705;
+    width: 17px;
+    padding: 4px 7px 9px 7px;
+}
+
+
+        .nav-search{
+        display:flex;
+         justify-content: space-evenly;
+         height: 40px;
+         margin-top: 7px;
+         margin-left: 10px;
+}
+         
+    
+    
+    .nav-search input{
+     width: 600px;
+     border-radius: 4px;
+     background-color: white;
+     border: none;
+    font-size: 1rem;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 10px;
+}
+
+    .search-select{
+        background-color: #f3f3f3;
+        width: 50px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        text-align: center;
+        border: none;
+    }
+     /* box-4 */
+    span{
+        font-size: 0.7rem;
+    }
+    #para1{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .nav-signin{
+        margin-left: 50px;
+        margin-top: 1px;
+            
+    }
+    .nav-return{
+        margin-left: 36px;
+    }
+    /* box-6 */
+    .nav-cart{
+     font-size: 15px;
+    margin-left: 95px;
+    margin-top: 5px;
+    font-weight: 700;
+    }
+   /* panel css */
+   .panel{
+    height: 40px;
+    background-color:#222f3d ;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+       }
+       .panel-ops p{
+        display:  inline;
+        margin-left: 21px;
+         margin-right: 60px;
+     }
+       
+       .panel-ops{
+        width: 91%;
+        font-size: 0.85rem;
+       }
+       .material-icons{
+        cursor: pointer;
+       }
+       /* hero section */
+.hero-section{
+    background-image: url(hero_image.jpg);
+    height: 400px;
+    background-size: cover;
+
+}
+/* /* shop-section */
+.shop-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+.box{
+    height: 280px;
+    /* border: 2px solid black; */
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 5px;
+}
+ .box-img {
+    height: 200px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-size: cover;
+
+ } 
+    
+.box-content{
+    margin-left:10px ;
+    margin-right: 10px;
+}
+.box p{
+color: #007185;
+}
+   
+
+.box-content p:hover{
+    color: #222f3d;
+    cursor: pointer;
+}
+#daba1:hover{
+    color: rgb(236, 0, 0);
+    text-decoration: underline;
+    cursor: pointer;
+}
+   
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navlogo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-add">
+                <p class="add-frist">Deliver To </p>
+            </div>
+
+            <div class="add-icon">
+                <i class="fa fa-car"></i>
+                <p class="add-sec"> Pakistan</p>
+            
+            </div>
+        
+
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input type="text" placeholder="Seacrh Amazon">
+            <div class="search-icon">
+                <i class="fa fa-search " id="iconha"></i>
+            </div>
+
+            <div class="nav-signin border">
+                <p><span>Hello ,sign in</span></p>
+                <p id="para1">Account & list</p>
+            </div>
+
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p id="para1">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i  class="fa fa-shopping-cart " style="font-size:30px " ></i>
+                Cart
+            </div>
+            </div>
+            </div>
+            <!-- panel starts here -->
+            <div class="panel ">
+                <div id="panel-all ">
+                    <i class="material-icons border">clear_all</i>
+                    All
+                    </div>
+
+
+                <div class="panel-ops ">
+                    <p>Today's Deals</p>
+                    <p > Customer Service</p>
+                    <p> Registry</p>
+                    <p> Gift Cards</p>
+                    <p> Sell</p>
+                </div>
+                
+            </div>
+            <!-- ends here -->
+        </header>
+
+
+        <div class="hero-section">
+        
+        </div>
+
+        <div class="shop-section">
+            <div class="box1 box" id="daba1">
+                <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url(box1_image.jpg);"></div>
+                <p>See more</p>
+            </div>
+
+            </div>
+            <div class="box2 box"id="daba1">
+                <div class="box-content">
+                    <h2>Tooth Brushes</h2>
+                    <div class="box-img" style="background-image: url(box2_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+            <div class="box3 box"id="daba1">
+                <div class="box-content">
+                    <h2>Decoration Piece</h2>
+                    <div class="box-img" style="background-image: url(box3_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+            <div class="box4 box"id="daba1">
+                <div class="box-content">
+                    <h2>Mobile Phones</h2>
+                    <div class="box-img" style="background-image: url(box4_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+        </div>
+        <!-- pasting -->
+        <div class="shop-section">
+            <div class="box1 box"id="daba1">
+                <div class="box-content">
+                <h2>MakeUP & more</h2>
+                <div class="box-img" style="background-image: url(box5_image.jpg);"></div>
+                <p>See more</p>
+            </div>
+
+            </div>
+            <div class="box2 box"id="daba1">
+                <div class="box-content">
+                    <h2> Animals Care</h2>
+                    <div class="box-img" style="background-image: url(box6_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+            <div class="box3 box"id="daba1">
+                <div class="box-content">
+                    <h2>On Trend Wardobes</h2>
+                    <div class="box-img" style="background-image: url(box8_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+            <div class="box4 box"id="daba1">
+                <div class="box-content">
+                    <h2>Tooth Brushes& more</h2>
+                    <div class="box-img" style="background-image: url(box2_image.jpg);"></div>
+                    <p>See more</p>
+                </div>
+    
+            </div>
+</body>
+</html>
